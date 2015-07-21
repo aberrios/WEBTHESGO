@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>{func:title}</title>
+  <meta http-equiv="Content-Type" content="text/html; charset={func:charset}" />
+  {clansphere:navmeta}
+  <link href="stylesheets/admin/admin.css" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/admin/content.css" rel="stylesheet" type="text/css" />
+  <link rel="alternate" type="application/rss+xml" href="{func:path}uploads/rss/news.xml" />
+</head>
+<body>
+
+<div id="head">
+  <span>ADMININTERFACE</span>
+ </div>
+
+<div id="nav-left">
+  <div class="navhead">MODULES</div>
+  <div class="navbody">{clansphere:navadmin}</div>
+</div>
+
+<div id="content">{func:show}</div>
+
+<div id="nav-right">
+  <div class="navhead">ACCOUNT</div>
+  <div class="navbody">{users:navlogin:style=icons}</div>
+  <div class="navhead">ERROR LOGS</div>
+  <div class="navbody">{logs:navlist}</div>
+  <div class="navhead">NAVLISTS</div>
+  <div class="navbody">{clansphere:navdebug}</div>
+</div>
+
+</body>
+</html>
