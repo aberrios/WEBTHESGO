@@ -33,7 +33,7 @@
             <header id="cabecera">
                 <h1 class="thesgo">THESGO</h1>
                 <section class="userArea">
-                    <a href="#">Inicia sesión</a>
+                    <a href="#" id="logbotton">Inicia sesión</a>
                     <a href="#">Registrate!</a>
                     <!--Logeado-->
                     <!--
@@ -72,5 +72,15 @@
 
 
         <script src="js/main.js"></script>
+
+        <script>
+            $( "#logbotton" ).click(function() {
+              $( ".log-block" ).slideToggle( "fast" , function(){
+                $("#target").focus();
+              } );
+
+
+            });
+        </script>
     </body>
 </html>
