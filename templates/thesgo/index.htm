@@ -1,17 +1,43 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+
+        <p>Hello world! This is HTML5 Boilerplate.</p>
+
+				<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
+
+
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 	<head>
 		<title>{func:title}</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		{clansphere:navmeta}
-			
+
 		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
 		<link rel="stylesheet" type="text/css" href="stylesheets/reset.css" media="screen, projection" />
 		<link rel="stylesheet" type="text/css" href="stylesheets/global.css" media="screen, projection" />
 		<link rel="stylesheet" type="text/css" href="stylesheets/layout.css" media="screen, projection" />
 		<link rel="stylesheet" type="text/css" href="stylesheets/content.css" media="screen, projection" />
 	</head>
-	
+
 	<body>
 		<div class="container">
 			<div id="header">
@@ -21,39 +47,39 @@
 					<h2><b>Clan</b>sphere</h2>
 					<h3>Professional clan care starts here</h3>
 				</div><!--END header clansphere-->
-				
+
 				<div class="topmatch">
 					{wars:navtop}
 				</div><!--END header topmatch-->
-				
+
 				<div class="login">
 					{users:navlogin}
 				</div><!--END header login-->
 			</div><!--END header-->
-			
+
 			<div id="content">
 				<div id="infobox" class="clear">
 					<div>
 						<h2>Latest News</h2>
 						<ul>{news:navlist}</ul>
 					</div><!--END content latest news-->
-					
+
 					<div>
 						<h2>Latest Topics</h2>
 						<ul>{board:navlist}</ul>
 					</div><!--END content latest arcticles-->
-					
+
 					<div>
 						<h2>Latest Clanwars</h2>
 						{wars:navlist}
 					</div><!--END content latest topics-->
 				</div><!--END cotnent infobox-->
-				
+
 				<hr />
-				
+
 				{func:show}
 			</div><!--END content-->
-			
+
 			<div id="sidebar">
 				<div>
 					<h2>Main Navigation</h2>
@@ -65,7 +91,7 @@
 						<li><a href="{url:gallery}" title="">Gallery</a></li>
 					</ul>
 				</div><!--END main navigation-->
-				
+
 				<div>
 					<h2>About Navigation</h2>
 					<ul>
@@ -79,7 +105,7 @@
 						<li><a href="{url:games}" title="">Games</a></li>
 					</ul>
 				</div><!--END about navigation-->
-				
+
 				<div>
 					<h2>Features Navigation</h2>
 					<ul>
@@ -95,7 +121,7 @@
 						<li><a href="{url:gallery}" title="">Gallery</a></li>
 					</ul>
 				</div><!--END features navigation-->
-				
+
 				<div>
 					<h2>Contact Navigation</h2>
 					<ul>
@@ -106,7 +132,7 @@
 						<li><a href="{url:clansphere_about}" title="">Scriptinfo</a></li>
 					</ul>
 				</div><!--END contact navigation-->
-				
+
 				<div>
 					<h2>Statistics</h2>
 					<ul>
@@ -118,7 +144,7 @@
 					</ul>
 				</div><!--END statistic-->
 			</div><!--END sidebar-->
-			
+
 			<div id="footer" class="clear">
 				<span>Copyright 2012 Seitentitel. All rights reserved.</span>
 				<span>Code by <a href="http://www.csphere.eu" title="">csphere.eu</a> - Design by <a href="http://www.fx-interfaces.com" title="">Seron</a></span>
