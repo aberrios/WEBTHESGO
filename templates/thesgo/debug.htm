@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="{func:charset}"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>{func:title}</title>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml; charset={func:charset}" />
+  {clansphere:navmeta}
+  <link href="stylesheets/admin/template.css" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/admin/content.css" rel="stylesheet" type="text/css" />
+  <link rel="alternate" type="application/rss+xml" href="{func:path}uploads/rss/news.xml" id="rss_news" />
+</head>
+<body>
+
+<div id="nav-left">
+  <div>MAIN</div>
+  <a href="{url:news_recent}" class="dark">News</a>
+  <a href="{url:gbook}">Gbook</a>
+  <a href="{url:board}" class="dark">Board</a>
+  <a href="{url:search}">Search</a>
+  
+  <div>CLAN</div>
+  <a href="{url:members_teams}" class="dark">Teams</a>
+  <a href="{url:members_list}">Members</a>
+  <a href="{url:wars_list}" class="dark">Clanwars</a>
+  <a href="{url:awards_list}">Awards</a>
+  <a href="{url:history_list}" class="dark">History</a>
+  <a href="{url:rules_list}">Rules</a>
+  <a href="{url:links_sponsors}" class="dark">Sponsors</a>
+  
+  <div>SERVICE</div>
+  <a href="{url:events_agenda}" class="dark">Events</a>
+  <a href="{url:servers_list}">Servers</a>
+  <a href="{url:users_list}" class="dark">Community</a>
+  <a href="{url:files_list}">Downloads</a>
+  <a href="{url:replays_list}" class="dark">Replays</a>
+  <a href="{url:links_list}">Links</a>
+  <a href="{url:quotes_list}" class="dark">Quotes</a>
+  <a href="{url:faq_list}">Faq</a>
+  <a href="{url:articles_list}" class="dark">Articles</a>
+  <a href="{url:gallery_list}">Gallery</a>
+      
+  <div>CONTACT</div>
+  <a href="{url:joinus_new}" class="dark">Joinus</a>
+  <a href="{url:fightus_new}">Fightus</a>
+  <a href="{url:contact_mail}" class="dark">Mailus</a>
+  <a href="{url:contact_imprint}">Imprint</a>
+  <a href="{url:clansphere_about}" class="dark">Scriptinfo</a>
+ </div>
+
+<div id="content">{func:show}</div>
+
+<div id="nav-right">
+  <div class="navhead">LOGIN</div>
+  <div class="navbody">{users:navlogin}</div>
+  <div class="navhead">ERROR LOGS</div>
+  <div class="navbody">{logs:navlist}</div>
+  <div class="navhead">NAVLISTS</div>
+  <div class="navbody">{clansphere:navdebug}</div>
+</div>
+
+<div id="bottom">
+  {clansphere:navtime} - Load: {func:parse}ms - Queries: {func:queries} - Memory: {func:memory}
+  <br /><hr style="width: 100%" />
+  <span style="float:left">
+    <a href="{url:news_feed}" class="noajax">News Feed</a>
+  </span>
+  <span style="float:right">
+    Supported standards:
+    <a href="http://validator.w3.org/check?uri=referer">XHTML 1.1</a> -
+    <a href="http://jigsaw.w3.org/css-validator/check/refer">CSS 2.1</a> -
+    <a href="http://validator.w3.org/feed/">RSS 2.0</a>
+  </span>
+  <span>
+    <a href="http://bugs.clansphere.net">Report a BUG</a>
+  </span>
+</div>
+ 
+</body>
+</html>

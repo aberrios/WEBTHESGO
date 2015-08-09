@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<title>{func:title}</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		{clansphere:navmeta}
+			
+		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="stylesheets/reset.css" media="screen, projection" />
+		<link rel="stylesheet" type="text/css" href="stylesheets/global.css" media="screen, projection" />
+		<link rel="stylesheet" type="text/css" href="stylesheets/layout.css" media="screen, projection" />
+		<link rel="stylesheet" type="text/css" href="stylesheets/content.css" media="screen, projection" />
+	</head>
+	
+	<body>
+		<div class="container">
+			<div id="header">
+				<h1>{func:title}</h1>
+				<div class="clansphere clear">
+					<img src="images/csphere_logo.png" alt="" />
+					<h2><b>Clan</b>sphere</h2>
+					<h3>Professional clan care starts here</h3>
+				</div><!--END header clansphere-->
+				
+				<div class="topmatch">
+					{wars:navtop}
+				</div><!--END header topmatch-->
+				
+				<div class="login">
+					{users:navlogin}
+				</div><!--END header login-->
+			</div><!--END header-->
+			
+			<div id="content">
+				<div id="infobox" class="clear">
+					<div>
+						<h2>Latest News</h2>
+						<ul>{news:navlist}</ul>
+					</div><!--END content latest news-->
+					
+					<div>
+						<h2>Latest Topics</h2>
+						<ul>{board:navlist}</ul>
+					</div><!--END content latest arcticles-->
+					
+					<div>
+						<h2>Latest Clanwars</h2>
+						{wars:navlist}
+					</div><!--END content latest topics-->
+				</div><!--END cotnent infobox-->
+				
+				<hr />
+				
+				{func:show}
+			</div><!--END content-->
+			
+			<div id="sidebar">
+				<div>
+					<h2>Main Navigation</h2>
+					<ul>
+						<li><a href="{url:news_recent}" title="">News</a></li>
+						<li><a href="{url:gbook}" title="">Gbook</a></li>
+						<li><a href="{url:board}" title="">Board</a></li>
+						<li><a href="{url:search}" title="">Search</a></li>
+						<li><a href="{url:gallery}" title="">Gallery</a></li>
+					</ul>
+				</div><!--END main navigation-->
+				
+				<div>
+					<h2>About Navigation</h2>
+					<ul>
+						<li><a href="{url:members_teams}" title="">Teams</a></li>
+						<li><a href="{url:members_list}" title="">Members</a></li>
+						<li><a href="{url:wars}" title="">Clanwars</a></li>
+						<li><a href="{url:awards}" title="">Awards</a></li>
+						<li><a href="{url:history}" title="">History</a></li>
+						<li><a href="{url:rules}" title="">Rules</a></li>
+						<li><a href="{url:links_sponsors}" title="">Sponsors</a></li>
+						<li><a href="{url:games}" title="">Games</a></li>
+					</ul>
+				</div><!--END about navigation-->
+				
+				<div>
+					<h2>Features Navigation</h2>
+					<ul>
+						<li><a href="{url:events_agenda}" title="">Events</a></li>
+						<li><a href="{url:servers}" title="">Servers</a></li>
+						<li><a href="{url:users}" title="">Community</a></li>
+						<li><a href="{url:files}" title="">Downloads</a></li>
+						<li><a href="{url:replays}" title="">Replays</a></li>
+						<li><a href="{url:links}" title="">Links</a></li>
+						<li><a href="{url:quotes}" title="">Quotes</a></li>
+						<li><a href="{url:faq}" title="">Faq</a></li>
+						<li><a href="{url:articles}" title="">Articles</a></li>
+						<li><a href="{url:gallery}" title="">Gallery</a></li>
+					</ul>
+				</div><!--END features navigation-->
+				
+				<div>
+					<h2>Contact Navigation</h2>
+					<ul>
+						<li><a href="{url:joinus_new}" title="">Joinus</a></li>
+						<li><a href="{url:fightus_new}" title="">Fightus</a></li>
+						<li><a href="{url:contact_mail}" title="">Mailus</a></li>
+						<li><a href="{url:contact_imprint}" title="">Imprint</a></li>
+						<li><a href="{url:clansphere_about}" title="">Scriptinfo</a></li>
+					</ul>
+				</div><!--END contact navigation-->
+				
+				<div>
+					<h2>Statistics</h2>
+					<ul>
+						<li><a href="{url:count_online}">{count:navone} Online</a></li>
+						<li>{count:navday} Heute</li>
+						<li>{count:navmon} Monat</li>
+						<li>{count:navusr} Registriert</li>
+						<li><a href="{url:count_stats}">{count:navall} Gesamt</a></li>
+					</ul>
+				</div><!--END statistic-->
+			</div><!--END sidebar-->
+			
+			<div id="footer" class="clear">
+				<span>Copyright 2012 Seitentitel. All rights reserved.</span>
+				<span>Code by <a href="http://www.csphere.eu" title="">csphere.eu</a> - Design by <a href="http://www.fx-interfaces.com" title="">Seron</a></span>
+			</div><!--END footer-->
+		</div><!--END container-->
+	</body>
+</html>

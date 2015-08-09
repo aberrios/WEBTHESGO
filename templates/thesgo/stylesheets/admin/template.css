@@ -1,0 +1,140 @@
+body {
+  background-color: #E5E5E5;
+  padding: 10px 10px 0 10px;
+  font-size: 12px;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+.clearfix:after {
+  content: "."; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden;
+}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+/* End hide from IE-mac */
+
+a {
+  color: #000000;
+}
+a:hover {
+  text-decoration: none;
+}
+
+#container {
+  margin:  0 auto;
+  width: 100%;
+}
+
+#head, #debug, #bottom {
+  width: 98%;
+  background-color: #FFFFFF;
+  border: 1px solid #888888;
+  padding: 5px 1%;
+  color: #757575;
+}
+#head {
+  height: 100px;
+  font-size: 60px;
+  letter-spacing: 5px;
+  text-align: center;
+}
+#debug {
+  overflow: auto;
+  font-size: 10px;
+  line-height: 150%;
+}
+#head span {
+  color: #B91F1D;
+}
+#head span.small {
+  font-size: 8px;
+}
+#head div {
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+#bottom {
+  clear: both;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#errors {
+  color:#DD3300;
+}
+#sql {
+  color:#666666;
+}
+#nav-left {
+  float: left;
+  width: 16%;
+  margin-bottom: 20px;
+}
+#nav-left a {
+  border-right: 1px solid #888888;
+  border-left: 1px solid #888888;
+  border-bottom: 1px solid #888888;
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  padding: 2px 0 2px 15px;
+  background-color: #FFFFFF;
+  font-size: 13px;
+}
+.dark {
+  background-color: #F0F0F0 !important;
+}
+#nav-left a:hover {
+  border-right: 4px solid #BA1616;
+  text-decoration: underline;
+}
+* html #nav-left a:hover, *:first-child+html #nav-left a:hover {
+  padding-left: 15px;
+}
+#content {
+  float: left;
+  width:64%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 12px;
+  position: relative;
+}
+#nav-right {
+  float: right;
+  margin-bottom: 20px;
+  width: 20%;
+}
+.navbody { 
+  border-left: 1px solid #888888;
+  border-right: 1px solid #888888;
+  border-bottom: 1px solid #888888;
+  background-color: #FFFFFF;
+  padding:4px 6px 4px 8px;
+  color: #000000;
+  font-size: 13px; 
+}
+.navbody td {
+  font-size: 13px; 
+}
+#nav-left div, .navhead {
+  margin-top: 20px;
+  border: 1px solid #888888;
+  color: #B91F1D;
+  border-right: 4px solid #BA1616 !important;
+  letter-spacing: 3px;
+  padding:4px 6px 4px 8px !important;
+  background-color: #FFFFFF;
+  font-size: 16px;
+}
+#counter span {
+  float: right;
+}
+
+#ajax_loading {
+  position:absolute;
+  top:20px;
+  right:20px;
+}
