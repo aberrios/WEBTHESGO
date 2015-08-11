@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/estilos.css">
+        <link href='http://fonts.googleapis.com/css?family=Ruslan+Display|Rammetto+One' rel='stylesheet' type='text/css'>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <section class="log-block">
+                <form>
+                    <input type="text" id="target" placeholder="usuario ej:f0rest">
+                    <input type="password" placeholder="Contraseña">
+                    <input type="submit" value="ingresar">
+                </form>
+        </section>
+        <nav id="menu">
+            <ul>
+                <a href="#">Inicio</a>
+                <a href="#">Noticias</a>
+                <a href="#">Torneos</a>
+            </ul>
+        </nav>
+        <header id="cabecera">
+            <h1 class="thesgo">THESGO</h1>
+            <section class="userArea">
+                <a href="#" id="logbotton">Inicia sesión</a>
+                <a href="#">Registrate!</a>
+                <!--Logeado-->
+                <!--
+                <a href="#">Usuario</a>
+                <a href="#">Mensaje</a>
+                <a href="#">Cerrar sesión</a>
+                -->
+            </section>
+
+        </header>
+        <section id="noticias">
+            <article class="news">
+                <div class="arriba">
+                    <h3 class="titulo">Video: Skadoodle - Flick of the wrist</h3>
+                    <p class="cat">CSGO</p>
+                </div>
+                <div class="abajo">
+                    <figure class="foto">
+                        <img src="img/noticia.png" alt="foto">
+                    </figure>
+                    <p class="abr">HLTV.org's Josip "brcho" Brtan brings you another movie of a world-class sniper, this time it is Tyler "Skadoodle" Latham and some of his best highlights from the past few months.</p>
+                </div>
+            </article>
+            <article class="news">
+                <div class="arriba">
+                    <h3 class="titulo">Video: Skadoodle - Flick of the wrist</h3>
+                    <p class="cat">CSGO</p>
+                </div>
+                <div class="abajo">
+                    <figure class="foto">
+                        <img src="img/noticia.png" alt="foto">
+                    </figure>
+                    <p class="abr">HLTV.org's Josip "brcho" Brtan brings you another movie of a world-class sniper, this time it is Tyler "Skadoodle" Latham and some of his best highlights from the past few months.</p>
+                </div>
+            </article>
+            <article class="news">
+                <div class="arriba">
+                    <h3 class="titulo">Video: Skadoodle - Flick of the wrist</h3>
+                    <p class="cat">CSGO</p>
+                </div>
+                <div class="abajo">
+                    <figure class="foto">
+                        <img src="img/noticia.png" alt="foto">
+                    </figure>
+                    <p class="abr">HLTV.org's Josip "brcho" Brtan brings you another movie of a world-class sniper, this time it is Tyler "Skadoodle" Latham and some of his best highlights from the past few months.</p>
+                </div>
+            </article>
+            <article class="news">
+                <div class="arriba">
+                    <h3 class="titulo">Video: Skadoodle - Flick of the wrist</h3>
+                    <p class="cat">CSGO</p>
+                </div>
+                <div class="abajo">
+                    <figure class="foto">
+                        <img src="img/noticia.png" alt="foto">
+                    </figure>
+                    <p class="abr">HLTV.org's Josip "brcho" Brtan brings you another movie of a world-class sniper, this time it is Tyler "Skadoodle" Latham and some of his best highlights from the past few months.</p>
+                </div>
+            </article>
+        </section>
+        <section id="wars">
+            <h4>Prox partidos / Resultados</h4>
+            <article class="partido">
+                <li>Dignitas (16) <span>vs</span> Hr (5)</li>
+            </article>
+            <article class="partido">
+                <li>Dignitas (0) <span>vs</span> Hr (0) <span>14:00</span></li>
+            </article>
+        </section>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+
+            <script>
+            $( "#logbotton" ).click(function() {
+              $( ".log-block" ).slideToggle( "fast" , function(){
+                $("#target").focus();
+              } );
+
+
+            });
+        </script>
+    </body>
+</html>

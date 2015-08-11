@@ -1,0 +1,148 @@
+@import url("http://fonts.googleapis.com/css?family=Ruslan+Display|Syncopate|Ubuntu");
+.log-block {
+  background: #0092d0;
+  padding: 0px;
+  height: 60px;
+  display: none;
+}
+.log-block .form-login {
+  width: 480px;
+  float: right;
+}
+.log-block .form-login input {
+  border: none !important;
+  padding: 0 10px;
+  margin: 15px 0;
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+  border: 2px solid #0092d0;
+}
+.log-block .form-login input[type=text] {
+  display: inline-block;
+  vertical-align: top;
+  color: #888;
+}
+.log-block .form-login input[type=password] {
+  display: inline-block;
+  vertical-align: top;
+  color: #888;
+}
+.log-block .form-login input[type=submit] {
+  display: inline-block;
+  vertical-align: top;
+  background: #4cb2de;
+  color: #fff;
+}
+.log-block .form-login input[type=submit]:hover {
+  background: #262b2f;
+  transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+}
+body {
+  background: #323b43;
+}
+#menu {
+  background: #323b43;
+  height: 30px;
+}
+#menu ul {
+  margin: 0;
+  padding: 0 10px;
+}
+#menu ul a {
+  color: #787c80;
+  font-weight: bold;
+  margin: 5px 10px;
+  text-decoration: none;
+  width: 150px;
+}
+#cabecera {
+  background: #262b2f;
+  height: 80px;
+  border-bottom: 2px solid #0092d0;
+}
+#cabecera .thesgo {
+  display: inline-block;
+  font-family: Rammetto One, cursive;
+  font-size: 50px;
+  color: #0092d0;
+  margin: 0;
+  width: 500px;
+}
+#cabecera .userArea {
+  display: inline-block;
+  float: right;
+  width: 500px;
+}
+#cabecera .userArea a {
+  color: #d0d1d2;
+}
+/* fin header */
+#noticias {
+  margin: 10px;
+  width: 950px;
+  display: inline-block;
+}
+#noticias .news {
+  display: inline-block;
+  background: #262b2f;
+  border: 1px solid #787c80;
+  border-radius: 2px;
+  height: 175px;
+  overflow: hidden;
+  width: 300px;
+}
+#noticias .news .arriba {
+  height: 75px;
+  border-bottom: 2px solid #0092d0;
+}
+#noticias .news .arriba h3 {
+  color: #d0d1d2;
+  font-family: 'Ubuntu';
+  font-size: 20px;
+  margin: 0;
+  padding: 5px;
+  width: 250px;
+}
+#noticias .news .arriba p {
+  display: none;
+  float: left;
+  font-size: 10px;
+  margin: 0;
+}
+#noticias .news .abajo {
+  height: 125px;
+}
+#noticias .news .abajo .foto img {
+  width: 300px;
+  height: 100px;
+}
+#noticias .news .abajo p {
+  display: none;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+#wars {
+  margin: 10px 0 0 0;
+  vertical-align: top;
+  display: inline-block;
+  width: 300px;
+  background: #d0d1d2;
+}
+#wars h4 {
+  display: inline-block;
+  background: #262b2f;
+  padding: 5px;
+  margin: 0;
+  color: #d0d1d2;
+  font-family: 'Syncopate';
+  border-bottom: 2px solid #0092d0;
+}
+#wars article {
+  list-style: none;
+}
